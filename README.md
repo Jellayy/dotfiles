@@ -21,4 +21,6 @@ My tmux config uses the tpm package manager, which must be installed before the 
 ```bash
 brew install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+tmux
+tmux source ~/.config/tmux/tmux.conf
 ```
