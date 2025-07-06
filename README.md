@@ -47,3 +47,9 @@ stow .
 2. Fetch TPM Plugins by pressing `prefix` + `I` while in tmux
 
 ## neovim
+
+### Plugins
+
+- `telescope` best nvim plugin ever made
+- `neo-tree` because netrw sucks
+- `which-key` because I can't remember my own keybinds
