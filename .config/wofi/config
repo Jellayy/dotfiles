@@ -1,0 +1,8 @@
+allow-images=true
+show-hidden=false
+location=center
+width=35%
+hide-scroll=false
+prompt=Run:
+insensitive=true
+lines=10
