@@ -1,0 +1,67 @@
+/* Apply same GitHub Dark Colorblind theme as Waybar */
+
+/* Color Palette */
+@define-color background rgba(13,17,23,0.8);
+@define-color fg-default #c9d1d9;
+@define-color fg-muted #8b949e;
+@define-color fg-subtle #6e7681;
+@define-color fg-on-emphasis #ffffff;
+
+@define-color accent-fg #58a6ff;
+@define-color accent-emphasis #1f6feb;
+@define-color accent-muted rgba(56,139,253,0.4);
+@define-color accent-subtle rgba(56,139,253,0.1);
+
+@define-color border-default #30363d;
+
+* {
+  font-family: "CaskaydiaCove Nerd Font Propo";
+  font-size: 15px;
+}
+
+window {
+  background-color: @background;
+  color: @fg-default;
+  border: 1px solid @border-default;
+  border-radius: 6px;
+}
+
+#input {
+  margin: 6px;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  color: @fg-default;
+  background-color: @background;
+  box-shadow: none;
+  outline: none;
+}
+#input:focus {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+#entry {
+  padding: 6px;
+  margin: 3px 6px;
+  border-radius: 4px;
+  color: @fg-default;
+  background-color: transparent;
+}
+
+#entry:selected {
+  background-color: @accent-subtle;
+  color: @accent-fg;
+  font-weight: bold;
+}
+
+#entry:active {
+  background-color: @accent-emphasis;
+  color: @fg-on-emphasis;
+}
+
+#scroll {
+  margin: 0 4px;
+  border-radius: 3px;
+}
