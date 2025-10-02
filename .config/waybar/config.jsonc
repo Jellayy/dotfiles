@@ -1,0 +1,31 @@
+{
+    "layer": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["temperature", "cpu", "memory", "pulseaudio", "network"],
+
+    "clock": {
+	"format": "{:%I:%M %p}",
+	"tooltip-format": "{:%A, %B %d, %Y  |  %I:%M:%S %p}"
+    },
+
+    "temperature": {
+        "format": " {temperatureC}°C"
+    },
+    "cpu": {
+        "format": " {usage}%"
+    },
+    "memory": {
+        "format": " {percentage}%"
+    },
+    "pulseaudio": {
+        "format": " {volume}%"
+    },
+    "network": {
+        "format": "{icon} {ifname}: {ipaddr}/{cidr}",
+	"tooltip-format": "{ifname} via {gwaddr}",
+	"format-icons": {
+            "default": ""
+	}
+    },
+}
