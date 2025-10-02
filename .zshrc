@@ -45,3 +45,10 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+
+# Init Git Tools
+for script in /home/jellayy/git/github.com/Jellayy/git-tools/*.sh; do
+    if [[ "$script" != "/home/jellayy/git/github.com/Jellayy/git-tools/install.sh" ]]; then
+        source "$script"
+    fi
+done
