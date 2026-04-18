@@ -1,5 +1,4 @@
 require("jellayy.remap")
-require("jellayy.lazy")
 
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -14,9 +13,9 @@ vim.opt.expandtab = true
 
 -- tab spacing settings for filetypes that should only have two spaces
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = { "yaml", "yml", "tf", "hcl" },
+    pattern = { "yaml", "yml", "terraform", "hcl" },
     callback = function()
-        vim.opt_local.tabstop = 2
+	vim.opt_local.tabstop = 2
 	vim.opt_local.shiftwidth = 2
 	vim.opt_local.expandtab = true
     end,
