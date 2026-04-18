@@ -47,8 +47,24 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 # Init Git Tools
-for script in /home/jellayy/git/github.com/Jellayy/git-tools/*.sh; do
-    if [[ "$script" != "/home/jellayy/git/github.com/Jellayy/git-tools/install.sh" ]]; then
+for script in /Users/jellayy/git/github.com/jellayy/git-tools/*.sh; do
+    if [[ "$script" != "/Users/jellayy/git/github.com/jellayy/git-tools/install.sh" ]]; then
         source "$script"
     fi
 done
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
