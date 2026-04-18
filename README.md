@@ -53,3 +53,7 @@ stow .
 - `telescope` best nvim plugin ever made
 - `neo-tree` because netrw sucks
 - `which-key` because I can't remember my own keybinds
+
+## (Linux) Hyprland + Waybar + Wofi
+
+- Minimal customizations to match the `github-dark-colorblind` theme
